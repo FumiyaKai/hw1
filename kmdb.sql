@@ -116,8 +116,7 @@ DROP TABLE IF EXISTS casting;
 -- TODO!
 CREATE TABLE actor (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    first_name TEXT,
-    last_name TEXT
+    name TEXT
 );
 
 CREATE TABLE movie (
@@ -130,13 +129,12 @@ CREATE TABLE movie (
 
 CREATE TABLE studio (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT,
-    );
+    name TEXT
+);
 
 CREATE TABLE character (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    first_name TEXT,
-    last_name TEXT
+    name TEXT
 );
 
 CREATE TABLE casting (
@@ -189,113 +187,91 @@ VALUES (
     );
 
 INSERT INTO actor (
-    first_name, 
-    last_name
+    name
     ) 
 
 VALUES (
-    "Christian", 
-    "Bale"
+    "Christian Bale"
     );
 
 INSERT INTO actor (
-    first_name, 
-    last_name
+    name
     ) 
 
 VALUES (
-    "Michael", 
-    "Caine"
+    "Michael Caine"
     );
 
 INSERT INTO actor (
-    first_name, 
-    last_name
+    name
     ) 
 
 VALUES (
-    "Liam", 
-    "Neeson"
+    "Liam Neeson"
     );
 
 INSERT INTO actor (
-    first_name, 
-    last_name
+    name
     ) 
 
 VALUES (
-    "Katie", 
-    "Holmes"
+    "Katie Holmes"
     );
 
 INSERT INTO actor (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Gary", 
-    "Oldman"
+    "Gary Oldman"
     );
 
 INSERT INTO actor (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Heath", 
-    "Ledger"
+    "Heath Ledger"
     );
 
 INSERT INTO actor (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Aaron", 
-    "Eckhart"
+    "Aaron Eckhart"
     );
 
 INSERT INTO actor (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Maggie", 
-    "Gyllenhaal"
+    "Maggie Gyllenhaal"
     );
 
 INSERT INTO actor (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Tom", 
-    "Hardy"
+    "Tom Hardy"
     );
 
 INSERT INTO actor (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Joseph", 
-    "Gordon-Levitt"
+    "Joseph Gordon-Levitt"
     );
 
 INSERT INTO actor (
-    first_name, 
-    last_name
+    name
     ) 
 
 VALUES (
-    "Anne", 
-    "Hathaway"
+    "Anne Hathaway"
     );
 
 INSERT INTO studio (
@@ -307,105 +283,264 @@ VALUES (
     );
 
 INSERT INTO character (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Bruce", 
-    "Wayne",
+    "Bruce Wayne"
     );
 
 INSERT INTO character (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Alfred", 
-    "",
+    "Alfred"
     );
 
 INSERT INTO character (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Ra's", 
-    "Al_Ghul",
+    "Ra's Al Ghul"
     );
 
 INSERT INTO character (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Rachel", 
-    "Dawes",
+    "Rachel Dawes"
     );
 
 INSERT INTO character (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Commissioner", 
-    "Gordon",
+    "Commissioner Gordon"
     );
 
 INSERT INTO character (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Joker", 
-    "",
+    "Joker"
     );
 
 INSERT INTO character (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Harvey", 
-    "Dent",
+    "Harvey Dent"
     );
 
 INSERT INTO character (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "Bane", 
-    "",
+    "Bane"
     );
 
 INSERT INTO character (
-    first_name, 
-    last_name
-    ) 
+    name
+    )
 
 VALUES (
-    "John", 
-    "Blake",
+    "John Blake"
     );
 
 INSERT INTO character (
-    first_name, 
-    last_name
+    name
+    )
+
+VALUES (
+    "Selina Kyle"
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
     ) 
 
 VALUES (
-    "Selina", 
-    "Kyle",
+    1, 
+    1,
+    1
     );
 
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    1, 
+    2,
+    2
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    1, 
+    3,
+    3
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    1, 
+    4,
+    4
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    1, 
+    5,
+    5
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    2, 
+    1,
+    1
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    2, 
+    6,
+    6
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    2, 
+    7,
+    7
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    2, 
+    2,
+    2
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    2, 
+    8,
+    4
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    3, 
+    1,
+    1
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    3, 
+    5,
+    5
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    3, 
+    9,
+    8
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    3, 
+    10,
+    9
+    );
+
+INSERT INTO casting (
+    movie_id, 
+    actor_id,
+    character_id
+    ) 
+
+VALUES (
+    3, 
+    11,
+    10
+    );
 
 -- Prints a header for the movies output
 .print "Movies"
@@ -415,8 +550,8 @@ VALUES (
 -- The SQL statement for the movies output
 -- TODO!
 SELECT movie.title, movie.released_on, movie.MPAA_rating, studio.name
-FROM movie INNER JOIN studio ON movie.studio_id = studio.id;
-
+FROM movie INNER JOIN studio ON movie.studio_id = studio.id
+;
 
 -- Prints a header for the cast output
 .print ""
@@ -427,3 +562,9 @@ FROM movie INNER JOIN studio ON movie.studio_id = studio.id;
 
 -- The SQL statement for the cast output
 -- TODO!
+SELECT movie.title, actor.name, character.name
+FROM casting
+    INNER JOIN movie ON casting.movie_id = movie.id
+    INNER JOIN actor ON casting.actor_id = actor.id
+    INNER JOIN character ON casting.character_id = character.id
+;
